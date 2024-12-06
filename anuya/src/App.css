@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+
+/* Margin & border */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling if there are layout shifts */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* General styling */
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color:#ffffff;
+  color: #010101;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 100px; /* Height of the fixed footer */
+}
+
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+/* Main content */
+main {
+flex: 1 0 auto;
+margin-top: 80px; /* This margin pushes content below the sticky header */
+display: flex;
+flex-direction: column;
+}
+
+
+.App {
+  text-align: center;
+}
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0; /* This makes it stick to the top */
+  z-index: 1000; /* Ensure it stays above other elements */
+  background-color: white; /* Keeps the header visible */
+  width: 100%; /* Make sure it spans the full width of the viewport */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  height: 10vh;
+}
+
+
+/* Container inside header */
+.container-fluid {
+  display: flex;
+  justify-content: space-between; /* Space between the logo and navbar */
+  align-items: center;
+  padding: 0; /* No extra padding */
+}
+
+.container-fluid, .row {
+  overflow: visible; /* Ensure sticky works properly */
+}
+
+/* Logo Styling */
+.logo {
+  margin-left: 8vw;
+  display: flex;
+}
+
+.logo img {
+  width: 10vw; /* Adjust the size of your logo */
+  height: auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1; /* Push navbar to the right */
+}
+
+.heroimage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

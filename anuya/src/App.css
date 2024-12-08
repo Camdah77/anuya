@@ -20,6 +20,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   margin: 0;
+  padding-top: 20px; /* Adjust this value to match the header's height */
   padding-bottom: 100px; /* Height of the fixed footer */
 }
 
@@ -39,17 +40,27 @@ flex-direction: column;
 .App {
   text-align: center;
 }
+
+
 /* Sticky Header */
-.sticky-header {
-  position: sticky;
-  top: 0; /* This makes it stick to the top */
-  z-index: 1000; /* Ensure it stays above other elements */
-  background-color: white; /* Keeps the header visible */
-  width: 100%; /* Make sure it spans the full width of the viewport */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-  height: 10vh;
+.header {
+  position: relative; /* Default position */
+  z-index: 100; /* Ensure it layers correctly */
+  background-color: #ffffff;
+  transition: all 0.3s ease; /* Smooth transition when styles change */
 }
 
+.header.sticky {
+  position: fixed; /* Make it stick */
+  top: 0; /* Stick to the top */
+  left: 0; /* Align to the left edge */
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Layer above other elements */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  padding-bottom: 20px /* Adjust this value to match the header's height */
+}
+
+  
 
 /* Container inside header */
 .container-fluid {
@@ -70,8 +81,8 @@ flex-direction: column;
 }
 
 .logo img {
-  width: 10vw; /* Adjust the size of your logo */
-  height: auto;
+  width: auto; /* Adjust the size of your logo */
+  height: 7vw;
 }
 
 /* Navbar */
@@ -82,18 +93,13 @@ flex-direction: column;
   flex-grow: 1; /* Push navbar to the right */
 }
 
-.heroimage {
+.heroimage img{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
-}
-
-.heroimage img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }

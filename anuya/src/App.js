@@ -16,7 +16,7 @@ import MakeArt from "./components/makeart";
 import ClassOnline from "./components/classonline";
 import ClassIRL from "./components/classirl";
 import More from "./components/more";
-import About from "./components/about";
+import About from "./components/camilla";
 import FAQ from "./components/faq";
 import Contact from "./components/contact";
 import NotFound from "./components/404"; // Renamed 404 for clarity
@@ -28,7 +28,6 @@ function App() {
       <Navbar />
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/original" element={<Original />} />
           <Route path="/printstudio" element={<PrintStudio />} />

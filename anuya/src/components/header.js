@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../images/logo/newtest.png";
+import NavBar from '../components/NavBar'; // Path and naming should match
 import '../App.css';
 
 function Header() {
@@ -34,9 +35,9 @@ function Header() {
                         </Link>
                     </div>
                     <div className="navbar col-sm-8">
-                        {/* Navbar content */}
-                    </div>
-                </div>
+            <NavBar /> {/* Correctly rendered as a React component */}
+            </div>
+                                </div>
             </div>
         </header>
     );

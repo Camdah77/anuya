@@ -113,6 +113,11 @@ flex-direction: column;
   background-size: 100%;
   background-color:#ffffff;
  }
+.DropdownToggle {
+  background-color:#ffffff;
+  height: 200px;
+  width: 200px;
+}
 
 .heroimage img{
   width: 100%;

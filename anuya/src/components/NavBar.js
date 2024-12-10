@@ -9,26 +9,29 @@ import {
   NavLink,
 } from 'reactstrap';
 
-function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
+function NavBar(props) {
+  const [collapsed, setCollapsed] = useState(true);
 
-  const toggleNavbar = () => setIsOpen(!isOpen);
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <Navbar expand="md" color="light" light className="w-100">
-      <NavbarBrand href="/">MyBrand</NavbarBrand>
-      <NavbarToggler onClick={toggleNavbar} />
-      <Collapse isOpen={isOpen} navbar>
-        <Nav navbar>
-          <NavItem>
-            <NavLink href="/components/">Components</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-          </NavItem>
-        </Nav>
-      </Collapse>
-    </Navbar>
+    <div>
+      <Navbar color="faded" light>
+    <NavbarToggler onClick={toggleNavbar} className="me-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="/components/">Components</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">
+                GitHub
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
   );
 }
 

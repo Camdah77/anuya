@@ -43,11 +43,16 @@ flex-direction: column;
 
 
 /* Sticky Header */
+/* Header Styling */
 .header {
-  position: relative; /* Default position */
-  z-index: 100; /* Ensure it layers correctly */
-  background-color: #ffffff;
-  transition: all 0.3s ease; /* Smooth transition when styles change */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header.sticky {
@@ -59,9 +64,7 @@ flex-direction: column;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
   padding-bottom: 20px /* Adjust this value to match the header's height */
 }
-
-  
-
+ 
 /* Container inside header */
 .container-fluid {
   display: flex;
@@ -81,8 +84,8 @@ flex-direction: column;
 }
 
 .logo img {
-  width: auto; /* Adjust the size of your logo */
-  height: 7vw;
+  max-height: 50px; /* Adjust as per design */
+  width: auto;
 }
 
 /* Navbar */
@@ -91,6 +94,12 @@ flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   flex-grow: 1; /* Push navbar to the right */
+}
+
+/* Optional: Adjust toggle icon alignment */
+.navbar-toggler {
+  margin-left: auto; /* Push it to the right */
+  color: black;
 }
 
 .heroimage img{

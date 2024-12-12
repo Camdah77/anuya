@@ -1,80 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
 .container {
   width: 100%;
-  margin: 0 auto; /* Keeps the container centered, remove if full-width */
-  padding: 0 !important; /* Removes all padding */
+  margin: 0 auto;
+  padding: 0;
   font-size: 14px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  color: #9d7f3f !important;
-}
-
-  .logotype img {
-    display: flex;
-    justify-content: flex-start; /* Align the logo to the left */
-    padding-left: 3vw; /* No extra padding */
-    padding-top: 2vh;
-    width: auto; /* Keep the logo proportional */
-    height: 100px;
-  }
- /* layout.module.css */
-nav {
-  display: flex;
-  align-items: center; /* Vertically centers the items */
-  justify-content: space-between; /* Space between logotype and links */
-}
-
+/* Logotype */
 .logotype {
-  margin-right: 20px; /* Adds spacing between the logo and the links */
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-.logotype {
-  margin-right: 2px; /* Adds spacing between the logo and the links */
+  height: 80px;
+  width: auto;
+  margin-left: 20px;
 }
 
-nav {
-  margin-left: 2px;
-  display: flex;
-  align-items: center; /* Vertically centers the items */
-  justify-content: space-between; /* Space between logotype and links */
-}
+/* Navigation */
 .navLinks {
-  display: flex; /* Places the links in a row */
-  list-style: none; /* Removes bullets from list */
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navLinkItem {
-  margin-left: 20px; /* Adds spacing between each navigation link */
+  margin-left: 1.5rem;
 }
 
 .navLinkText {
   text-decoration: none;
-  color: #000; /* Update with your preferred link color */
-  }
-
-.navLinkText:hover {
-  color:#9d7f3f;
-  text-decoration: underline; /* Adds an underline on hover */
+  color: #000;
+  font-weight: 500;
 }
 
+.navLinkText:hover {
+  color: #9d7f3f;
+  text-decoration: underline;
+}
+
+/* Page heading under logotype */
+.pageHeading {
+   margin-left: 23px;
+  font-size: 16px;
+  font-style: italic; /* Makes the text italic */
+  color: #9d7f3f;
+}
+
+.pageHeading h5 {
+  margin-left: 23px;
+  font-size: 14px;
+  font-style: italic;
+  color: #9d7f3f;
+}
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #000;
+}
+  
   .site-title {
     font-size: 14px;
     color: rgb(0, 0, 0);
     margin-bottom: 150px;
     z-index: 999;
-  }
-
-  .h5, h5 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 3.25rem;
-    color: #9d7f3f;
-  
   }

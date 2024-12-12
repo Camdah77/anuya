@@ -1,35 +1,44 @@
-import * as React from 'react'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import * as React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 import Hero from "../components/hero2"
-import { graphql } from 'gatsby'
+import "../styles/blog.css"
 
-const BlogPage = ({ data }) => { 
-       return (
-      <Layout pageTitle="News">
-        <Hero />
-        <ul>
-      {
-        data.allFile.nodes.map(node => (
-          <li key={node.name}>
-            {node.name}
-          </li>
-        ))
-      }
+const BlogPage = ({ data }) => {
+  return (
+    <Layout pageTitle="News!">
+           <Hero />
+
+      <ul>
+        {data.allMdx.nodes.map(node => (
+           <article key={node.id}>
+            <h2>{node.frontmatter.title}</h2>
+            <p>Updated:{node.frontmatter.date}</p>
+            <p>{node.excerpt}</p>
+            </article>
+ 
+        ))}
       </ul>
-      </Layout>
-    )
-  }
-  export const query = graphql`
+    </Layout>
+  );
+};
+
+export const query = graphql`
   query {
-    allFile {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
       nodes {
-        name
+        frontmatter {
+          date(formatString: "MMMM D, YYYY")
+          title
+        }
+        id
+        excerpt
       }
     }
   }
-`
-  
-export const Head = ({ data }) => <Seo title="News: Art by Anuya | Camilla Dahlström" />
-  
-  export default BlogPage
+`;
+
+export const Head = () => <Seo title="News: Art by Anuya | Camilla Dahlström" />;
+
+export default BlogPage;

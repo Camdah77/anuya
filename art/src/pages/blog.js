@@ -7,7 +7,7 @@ import "../styles/blog.css"
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="News!">
+    <Layout pageTitle="Colorful news!">
            <Hero />
 
       <ul>

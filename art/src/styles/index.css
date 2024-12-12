@@ -9,7 +9,14 @@
   box-sizing: border-box;
 }
 /* General styling */
-  html, body {
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+  html {
     margin: 0 ;
     padding: 0 ;
     width: 100% ;
@@ -20,6 +27,8 @@ main {
   margin: 0 auto; /* Center main content if needed */
   padding: 0; /* Ensure no extra padding */
   width: 100%;
+  flex: 1; /* Pushes footer to the bottom if content is short */
+
 }
 
 /* Header styles */

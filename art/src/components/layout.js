@@ -1,15 +1,14 @@
 import * as React from "react"
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import Footer from './footer.js';
 import {
+  logotype,
   container,
-  heading,
+  pageHeading,
   navLinks,
   navLinkItem,
-  logotype,
-  navLinkText,
-  siteTitle,
-  pageHeading, // New class for the h5
-} from './layout.module.css'
+  navLinkText }
+from './layout.module.css'
 import "../styles/index.css"
 import "../styles/navbar.css"
 import "bootstrap/dist/css/bootstrap.min.css" // Import Bootstrap first
@@ -23,7 +22,7 @@ const Layout = ({ pageTitle, children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div className={container}>
@@ -68,11 +67,10 @@ const Layout = ({ pageTitle, children }) => {
         {children}
       </main>
 
-      <footer className={siteTitle}>
-        {data.site.siteMetadata.title}
-      </footer>
+      {/* Use the Footer component */}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

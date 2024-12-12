@@ -1,5 +1,6 @@
 import React from 'react';
 import * as styles from './footer.module.css';
+import Seo from '../components/seo'
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -9,5 +10,5 @@ const Footer = () => (
     </ul>
   </footer>
 );
-export const Head = () => <Seo title="Art by Anuya | Camilla Dahlström" />
+export const Head = () =>  <Seo title=" Art by Anuya | Camilla Dahlström" />
 export default Footer;

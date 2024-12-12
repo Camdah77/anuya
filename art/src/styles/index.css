@@ -28,38 +28,8 @@ main {
   padding: 0; /* Ensure no extra padding */
   width: 100%;
   flex: 1; /* Pushes footer to the bottom if content is short */
-
 }
 
-/* Header styles */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: rgb(161, 38, 38);
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.container {
-  width: 100%;
-  margin: 0 auto; /* Keeps the container centered, remove if full-width */
-  padding: 0 !important; /* Removes all padding */
-  font-size: 14px;
-}
-
-.layout-module--container--78b04 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 0 !important;
-  font-size: 14px;}
-
-
- h1   {  
-  color: #9e7e3b !important;
-  font-size: 12px;
-}
 
 .heroimage img{
   justify-self: start; /* Aligns the logotype to the left */

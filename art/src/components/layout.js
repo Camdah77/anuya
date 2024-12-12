@@ -26,6 +26,8 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
+         {/* Sticky Header */}
+         <header className="sticky-header">
       <nav className="row align-items-center justify-content-between">
         {/* Logotype */}
         <div className="col-2 d-flex align-items-center">
@@ -62,7 +64,7 @@ const Layout = ({ pageTitle, children }) => {
 
       {/* Heading centered under logotype */}
       <h5 className={pageHeading}>{pageTitle}</h5>
-
+</header>
       <main>
         {children}
       </main>

@@ -5,6 +5,13 @@
   padding: 0;
   font-size: 14px;
 }
+.sticky-header {
+  position: sticky;
+  top: 0; /* Keep it at the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: #fff; /* Optional: Add background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
 
 /* Logotype */
 .logotype {
@@ -52,12 +59,6 @@
   color: #9d7f3f;
 }
 /* Footer */
-footer {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 1rem;
-  color: #000;
-}
   
   .site-title {
     font-size: 14px;

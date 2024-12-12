@@ -15,3 +15,9 @@
     height: 150px;
   }
  
+  .site-title {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 150px;
+    z-index: 999;
+  }

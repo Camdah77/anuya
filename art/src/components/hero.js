@@ -1,6 +1,7 @@
 import * as React from "react"
 import "../styles/index.css"
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css" // Import Bootstrap first
+
 
 function Hero() {
   return (

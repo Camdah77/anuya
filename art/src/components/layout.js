@@ -6,6 +6,8 @@ import {
   navLinks,
   navLinkItem,
   navLinkText } from './layout.module.css'
+  import "../styles/index.css"
+  import "bootstrap/dist/css/bootstrap.min.css" // Import Bootstrap first
 
 
 

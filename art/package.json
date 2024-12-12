@@ -17,8 +17,10 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "gatsby": "^5.14.0",
+    "graphql": "github:graphql/graphql-js#npm",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.6",
     "react-dom": "^18.2.0"
+   
   }
 }

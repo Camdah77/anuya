@@ -5,8 +5,10 @@ import {
   heading,
   navLinks,
   navLinkItem,
+  logotype,
   navLinkText } from './layout.module.css'
   import "../styles/index.css"
+  import "../styles/navbar.css"
   import "bootstrap/dist/css/bootstrap.min.css" // Import Bootstrap first
 
 
@@ -14,6 +16,11 @@ import {
   const Layout = ({ pageTitle, children }) => {
     return (
       <div className={container}>
+        <div className={logotype}>
+        <img src="https://res.cloudinary.com/dj9sie6nl/image/upload/v1734006640/logoanuya.png"
+        alt="Logotype Art by Anuya"
+      /></div>
+        
         <nav>
           <ul className={navLinks}>
             <li className={navLinkItem}>

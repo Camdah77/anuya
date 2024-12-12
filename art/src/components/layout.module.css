@@ -5,15 +5,13 @@
   font-size: 14px;
 }
 
-.layout-module--container--78b04 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 0 !important;
-  font-size: 14px;}
 
-
-  .container .layout-heading 
-  {  
-  color: #9e7e3b !important;
-  font-size: 14px;
-}
+  .logotype img {
+    display: flex;
+    justify-content: flex-start; /* Align the logo to the left */
+    padding-left: 5vw; /* No extra padding */
+    padding-top: 2vh;
+    width: auto; /* Keep the logo proportional */
+    height: 150px;
+  }
+ 

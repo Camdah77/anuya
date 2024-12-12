@@ -41,8 +41,6 @@ flex-direction: column;
   text-align: center;
 }
 
-
-/* Sticky Header */
 /* Header Styling */
 .header {
   position: sticky;
@@ -53,6 +51,11 @@ flex-direction: column;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.container {
+  margin: auto;
+  max-width: 500px;
+  font-family: sans-serif;
 }
 
 .header.sticky {

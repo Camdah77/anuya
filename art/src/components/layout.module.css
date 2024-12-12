@@ -1,0 +1,21 @@
+
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+
+
+/* layout.module.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pageTitle {
+    font-size: 2rem; /* Make it larger */
+    font-weight: bold; /* Add bold text */
+    text-align: center; /* Center align */
+    color: #333; /* Dark gray */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  

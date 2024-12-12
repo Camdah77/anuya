@@ -1,25 +1,15 @@
 import * as React from "react"
-import "../styles/index.css"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { Link } from 'gatsby'
-import Hero from "./hero"
+import Layout from "../components/layout"
+import Hero from "../components/hero2"
 
-
-// Step 2: Define your component
 const ReadMore = () => {
   return (
-    <main>
-       <Link to="/">Back to Home</Link> 
-      <Link to="./exhib.js">Exhib</Link>
-       <Hero /> {/* Include the Hero component if it's intended to be used */}  
-       <h1>Read More!</h1>
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-    </main>
+    <Layout pageTitle="Read More">
+      <Hero />
+      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+    </Layout>
   )
 }
 
-// You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Art by Camilla | Read More </title>
-
-// Step 3: Export your component
+export const Head = () => <title>Art by Camilla | Read More</title>
 export default ReadMore

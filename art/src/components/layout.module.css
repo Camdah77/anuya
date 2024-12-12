@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .container {
   width: 100%;
   margin: 0 auto; /* Keeps the container centered, remove if full-width */
@@ -5,19 +8,73 @@
   font-size: 14px;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: #9d7f3f !important;
+}
 
   .logotype img {
     display: flex;
     justify-content: flex-start; /* Align the logo to the left */
-    padding-left: 5vw; /* No extra padding */
+    padding-left: 3vw; /* No extra padding */
     padding-top: 2vh;
     width: auto; /* Keep the logo proportional */
-    height: 150px;
+    height: 100px;
   }
- 
+ /* layout.module.css */
+nav {
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  justify-content: space-between; /* Space between logotype and links */
+}
+
+.logotype {
+  margin-right: 20px; /* Adds spacing between the logo and the links */
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.logotype {
+  margin-right: 2px; /* Adds spacing between the logo and the links */
+}
+
+nav {
+  margin-left: 2px;
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+  justify-content: space-between; /* Space between logotype and links */
+}
+.navLinks {
+  display: flex; /* Places the links in a row */
+  list-style: none; /* Removes bullets from list */
+  margin: 0;
+  padding: 0;
+}
+
+.navLinkItem {
+  margin-left: 20px; /* Adds spacing between each navigation link */
+}
+
+.navLinkText {
+  text-decoration: none;
+  color: #000; /* Update with your preferred link color */
+  }
+
+.navLinkText:hover {
+  color:#9d7f3f;
+  text-decoration: underline; /* Adds an underline on hover */
+}
+
   .site-title {
     font-size: 14px;
     color: rgb(0, 0, 0);
     margin-bottom: 150px;
     z-index: 999;
+  }
+
+  .h5, h5 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3.25rem;
+    color: #9d7f3f;
+  
   }

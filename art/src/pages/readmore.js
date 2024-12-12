@@ -1,6 +1,8 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero2"
+import Seo from '../components/seo'
+
 
 const ReadMore = () => {
   return (
@@ -11,5 +13,5 @@ const ReadMore = () => {
   )
 }
 
-export const Head = () => <title>Art by Camilla | Read More</title>
+export const Head = () => <Seo title="Read more: Art by Anuya | Camilla Dahlström" />
 export default ReadMore

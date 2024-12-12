@@ -1,0 +1,25 @@
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9e7e3b; /* Light grey background */
+    color: #000000; /* Dark text color */
+  }
+  
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .footerLinks li {
+    margin: 0 10px;
+  }
+  
+  .footerLinks a {
+    text-decoration: none;
+    color: inherit;
+  }
+  

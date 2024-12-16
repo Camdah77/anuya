@@ -57,7 +57,7 @@ main {
 /* Navigation Bar Styling */
 .navbar {
   display: flex;
-  justify-content: flex-end; /* Align to the right */
+  justify-content:center; /* Align to the right */
   align-items: center;
   flex-wrap: wrap; /* Wrap for smaller screens */
   gap: 10px; /* Add space between items */

@@ -14,7 +14,7 @@ function Header() {
         </Link>
       </div>
 
-      {/* Navigation Bar */}
+      {/* Navigation Section */}
       <NavBar />
     </header>
   );

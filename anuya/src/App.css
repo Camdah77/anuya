@@ -1,99 +1,93 @@
 
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
-
-/* Margin & border */
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scrolling if there are layout shifts */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* General styling */
+/* Body Styling */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color:#ffffff;
+  background-color: #ffffff;
   color: #010101;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   margin: 0;
-  padding-top: 20px; /* Adjust this value to match the header's height */
-  padding-bottom: 100px; /* Height of the fixed footer */
+  padding-top: 20px; /* Adjust based on header height */
+  padding-bottom: 100px; /* Footer height */
 }
 
-body, html {
-  overflow-x: hidden; /* Prevent horizontal scroll issues */
-}
-
-/* Main content */
 main {
-flex: 1 0 auto;
-margin-top: 80px; /* This margin pushes content below the sticky header */
-display: flex;
-flex-direction: column;
+  flex: 1 0 auto;
+  margin-top: 80px; /* Push content below sticky header */
+  display: flex;
+  flex-direction: column;
 }
 
-
-.App {
-  text-align: center;
-}
-
-
-/* Sticky Header */
-/* Header Styling */
 /* Header Styling */
 .header {
-  position: sticky; /* Sticky header on scroll */
+  position: sticky; /* Sticky on scroll */
   top: 0;
-  z-index: 1000; /* Ensure it appears above other content */
-  background-color: white; /* White background for header */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: white;
   padding: 10px 15px;
-  display: flex; /* Align items horizontally */
+  display: flex;
   justify-content: space-between; /* Space between logo and NavBar */
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-}
-
-/* Logo Container Styling */
-.logo_container {
-  display: flex;
-  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo Styling */
-.logo img {
-  max-height: 60px; /* Adjust height as needed */
-  width: auto; /* Maintain aspect ratio */
+.logo_container {
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
-/* Navigation Bar Adjustments */
+.logo img {
+  max-height: 80px; /* Responsive height */
+  width: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+}
+
+/* Navigation Bar Styling */
 .navbar {
-  flex-grow: 1; /* Take up remaining space */
-  text-align: right; /* Align navbar items to the right */
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap for smaller screens */
+  gap: 10px; /* Add space between items */
 }
 
 .navbar ul {
-  list-style: none; /* Remove default list styles */
   display: flex;
-  gap: 15px; /* Space between nav links */
+  list-style: none; /* Remove bullets */
   margin: 0;
   padding: 0;
 }
 
+.navbar ul li {
+  margin-right: 20px; /* Space between links */
+}
+
+.navbar ul li:last-child {
+  margin-right: 0; /* Remove margin on the last item */
+}
+
 .navbar a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Default text color */
-  font-weight: 500; /* Medium font weight */
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #007bff; /* Add a hover effect (optional) */
+  color: #929292; /* Hover color */
 }
-
-
 
 .heroimage img{
   width: 100%;
@@ -104,4 +98,40 @@ flex-direction: column;
   overflow: hidden;
   position: relative;
   object-fit: cover;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack logo and navigation */
+    align-items: center;
+  }
+
+  .navbar {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Add vertical spacing between links */
+  }
+
+  .logo img {
+    max-height: 60px; /* Reduce logo size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar ul li {
+    margin: 5px 0; /* Adjust spacing for very small screens */
+  }
+
+  .logo img {
+    max-height: 50px; /* Further reduce logo size */
+  }
 }

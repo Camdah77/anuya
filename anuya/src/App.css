@@ -44,118 +44,56 @@ flex-direction: column;
 
 /* Sticky Header */
 /* Header Styling */
+/* Header Styling */
 .header {
-  position: sticky;
+  position: sticky; /* Sticky header on scroll */
   top: 0;
-  z-index: 10;
-  background-color: white;
+  z-index: 1000; /* Ensure it appears above other content */
+  background-color: white; /* White background for header */
   padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Space between logo and NavBar */
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
-.header.sticky {
-  position: fixed; /* Make it stick */
-  top: 0; /* Stick to the top */
-  left: 0; /* Align to the left edge */
-  width: 100%; /* Ensure it spans the full width */
-  z-index: 1000; /* Layer above other elements */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
-  padding-bottom: 20px /* Adjust this value to match the header's height */
-}
- 
-/* Container inside header */
-.container-fluid {
+/* Logo Container Styling */
+.logo_container {
   display: flex;
-  justify-content: space-between; /* Space between the logo and navbar */
   align-items: center;
-  padding: 0; /* No extra padding */
-}
-
-.container-fluid, .row {
-  overflow: visible; /* Ensure sticky works properly */
 }
 
 /* Logo Styling */
-.logo {
-  margin-left: 8vw;
-  display: flex;
-}
-
 .logo img {
-  max-height: 50px; /* Adjust as per design */
-  width: auto;
+  max-height: 60px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
 }
 
-/* Navbar */
-Navbar.css
-.header {
- position: fixed;
- width: 100%;
- top: 0;
- left: 0;
- background-color: transparent;
- z-index: var(--z-fixed);
+/* Navigation Bar Adjustments */
+.navbar {
+  flex-grow: 1; /* Take up remaining space */
+  text-align: right; /* Align navbar items to the right */
 }
 
-.nav {
- display: flex;
- align-items: center;
- justify-content: space-between;
- position: relative;
- height: var(--header-height);
- margin: 1rem;
+.navbar ul {
+  list-style: none; /* Remove default list styles */
+  display: flex;
+  gap: 15px; /* Space between nav links */
+  margin: 0;
+  padding: 0;
 }
 
-.nav__logo {
- color: var(--first-color);
- transition: color 0.4s;
- font-size: var(--h2-font-size);
- font-family: var(--second-font);
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Default text color */
+  font-weight: 500; /* Medium font weight */
 }
 
-.nav__toggle,
-.nav__close {
- font-size: 1.5rem;
- color: var(--title-color);
- cursor: pointer;
+.navbar a:hover {
+  color: #007bff; /* Add a hover effect (optional) */
 }
 
-.nav__cta {
- background-color: var(--first-color);
- color: var(--title-color);
- border: none;
- border-radius: 4px;
- cursor: pointer;
- transition: background-color 0.3s ease;
- padding: 0.75rem 1.5rem;
-}
-.nav__list {
- display: flex;
- flex-direction: column;
- row-gap: 2.5rem;
-}
 
-.nav__link {
- color: var(--title-color);
- font-weight: var(--font-semi-bold);
- transition: color 0.4s;
-}
-
-.nav__link:hover {
- color: var(--first-color);
-}
-
-.nav__close {
- position: absolute;
- top: 1rem;
- right: 1.5rem;
-}
-
-.show-menu {
- right: 0;
-}
 
 .heroimage img{
   width: 100%;

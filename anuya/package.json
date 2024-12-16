@@ -16,7 +16,8 @@
     "react-usestateref": "^1.0.9",
     "reactstrap": "^9.2.3",
     "web-vitals": "^2.1.4",
-    "web-vitals-reporter": "^1.0.0"
+    "web-vitals-reporter": "^1.0.0",
+    "styled-components": "^5.3.10"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css";
+import "../styles/header.css";
+
 
 function Hero() {
     return (

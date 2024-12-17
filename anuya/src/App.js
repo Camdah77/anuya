@@ -1,24 +1,22 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import Flipcard from "./components/flipcards";
-import ContactForm from "./components/contact";
-
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Home from "./components/home";
+import Camilla from "./components/camilla"; 
 
 function App() {
   return (
-    <div className="App">
-       <Header />
-       <Hero />
-       <div className="app-heading">Welcome to a colorful world!</div>
-       <Flipcard />
-       <div className="app-heading">Get in contact!</div>
-       <ContactForm/>
-      </div>
-  
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Landing Page */}
+        <Route path="/camilla" element={<Camilla />} /> {/* Camilla Page */}
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

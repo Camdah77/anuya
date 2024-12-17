@@ -49,6 +49,7 @@ main {
 }
 
 .logo img {
+  margin-left: 80px;
   max-height: 80px; /* Responsive height */
   width: auto; /* Maintain aspect ratio */
   max-width: 100%; /* Prevent overflow */
@@ -64,6 +65,17 @@ main {
   position: relative;
   object-fit: cover;
   padding-bottom: 2%;
+}
+.app-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px; /* Adjust size as needed */
+  color: black; /* White text */
+  margin-bottom: 20px; /* Space below the heading */
+  margin-top: 30px;
+  margin-left: 80px;
+
+  font-style: italic;
+  text-align: left; /* Center align */
 }
 
 /* Responsive Design */

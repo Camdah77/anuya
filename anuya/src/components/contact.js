@@ -66,10 +66,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='ContactForm'>
-      <div className='container'>
+    <div className="ContactForm">
+      <div className='container' >
         <div className='row'>
           <div className='col-12 text-center'>
+         
             <div className='contactForm'>
               <form
                 id='contact-form'
@@ -125,11 +126,11 @@ const ContactForm = () => {
                   <div className='col'>
                     <input
                       type='text'
-                      name='subject'
+                      name='How can I help you?'
                       {...register('subject', {
                         required: {
                           value: true,
-                          message: 'Please enter a subject',
+                          message: 'I am looking forward to help you!',
                         },
                         maxLength: {
                           value: 75,

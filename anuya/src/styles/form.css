@@ -1,49 +1,108 @@
-
-  
- /*Google fonts*/
+/*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+
+
+
+
+
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-git
 
-form {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    margin-top: 20px;
-    background-color: black;
-    width: 100%;
-    
+/* Contact Form Specific Styling */
+.ContactForm {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 0; /* Removes padding */
+  margin: 0 auto; /* Centers content if needed */
+  background-color: #9e7e3b; /* Black background only for the ContactForm */
+  color: white;
+}
+
+/* Remove padding on the container rows */
+.ContactForm .container, 
+.ContactForm .row {
+  margin: 0;
+  padding: 0;
+}
+
+.app-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px; /* Adjust size as needed */
+  color: black; /* White text */
+  margin-bottom: 20px; /* Space below the heading */
+  margin-top: 30px;
+  margin-left: 80px;
+
+  font-style: italic;
+  text-align: left; /* Center align */
+}
+
+.ContactForm .formRow {
+  margin-bottom: 15px; /* Adjust the value as needed */
+}
+/* Form Styling */
+.ContactForm form {
+  width: 100%;
+  margin: 0; /* Remove margins */
+  padding: 30px 0; /* Top and bottom padding */
+  background-color: #9e7e3b; /* Ensure form background is black */
+}
+
+/* Input and Textarea Styles */
+.ContactForm .form-control {
+  background-color: white; /* Ensures inputs are visible */
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.ContactForm .formInput {
+  width: 100%;
+  padding: 15px 10px;
+}
+
+/* Button Styling */
+.ContactForm .submit-btn {
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.ContactForm .submit-btn:hover {
+  background-color: black; /* Hover effect */
+  color: #9e7e3b;
+}
+
+/* Error Message Styling */
+.ContactForm .errorMessage {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  .ContactForm .formInput,
+  .ContactForm .submit-btn {
+      width: 100%;
   }
-  
-  .formRow {
-    margin: 10px 0 20px 0;
+
+  .ContactForm form {
+      padding: 15px 0; /* Smaller top/bottom padding */
   }
-  
-  .formInput {
-    padding: 15px 10px;
-  }
-  
-  .errorMessage {
-    color: #f45532;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .submit-btn {
-    padding: 15px 50px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-  }
-  
-  @media (max-width: 768px) {
-    .submit-message {
-      width: 125px;
-      margin-left: 200px;
-    }
-  }
+}

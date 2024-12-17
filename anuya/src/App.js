@@ -13,7 +13,9 @@ function App() {
     <div className="App">
        <Header />
        <Hero />
+       <div className="app-heading">Welcome to a colorful world!</div>
        <Flipcard />
+       <div className="app-heading">Get in contact!</div>
        <ContactForm/>
       </div>
   

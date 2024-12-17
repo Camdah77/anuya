@@ -1,0 +1,28 @@
+
+
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+/* General Reset */
+
+  .container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+    width: 100%;
+      justify-items: center;
+    padding-bottom: 20px;
+  }
+
+  .app-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Adjust size as needed */
+    color: black; /* White text */
+    margin-bottom: 20px; /* Space below the heading */
+    margin-top: 30px;
+    margin-left: 80px;
+  
+    font-style: italic;
+    text-align: left; /* Center align */
+  }
+  

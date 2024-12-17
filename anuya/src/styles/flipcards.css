@@ -3,8 +3,10 @@
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 20px; /* Space between cards */
   justify-items: center;
-  margin: 20px auto;
+  margin: 10px auto;
   max-width: 1200px; /* Optional: Keeps layout centered */
+  padding-bottom: 10%;
+  
 }
 .flipcard {
   width: 300px;

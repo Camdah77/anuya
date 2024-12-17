@@ -63,7 +63,7 @@ main {
   overflow: hidden;
   position: relative;
   object-fit: cover;
-  padding-bottom: 10%;
+  padding-bottom: 2%;
 }
 
 /* Responsive Design */

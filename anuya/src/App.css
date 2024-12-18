@@ -9,63 +9,6 @@
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Body Styling */
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  color: #010101;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding-top: 20px; /* Adjust based on header height */
-  padding-bottom: 100px; /* Footer height */
-}
-
-main {
-  flex: 1 0 auto;
-  margin-top: 80px; /* Push content below sticky header */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header Styling */
-.header {
-  position: sticky; /* Sticky on scroll */
-  top: 0;
-  z-index: 1000; /* Ensure it stays above other content */
-  background-color: white;
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between; /* Space between logo and NavBar */
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo Styling */
-.logo_container {
-  flex-shrink: 0; /* Prevent shrinking */
-}
-
-.logo img {
-  margin-left: 80px;
-  max-height: 80px; /* Responsive height */
-  width: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Prevent overflow */
-}
-
-.heroimage img{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-  object-fit: cover;
-  padding-bottom: 2%;
-}
 .app-heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px; /* Adjust size as needed */
@@ -78,38 +21,3 @@ main {
   text-align: left; /* Center align */
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column; /* Stack logo and navigation */
-    align-items: center;
-  }
-
-  .navbar {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar ul {
-    flex-direction: column; /* Stack navigation links vertically */
-    align-items: center;
-  }
-
-  .navbar ul li {
-    margin: 10px 0; /* Add vertical spacing between links */
-  }
-
-  .logo img {
-    max-height: 60px; /* Reduce logo size for smaller screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .navbar ul li {
-    margin: 5px 0; /* Adjust spacing for very small screens */
-  }
-
-  .logo img {
-    max-height: 50px; /* Further reduce logo size */
-  }
-}

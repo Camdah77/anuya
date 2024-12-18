@@ -1,11 +1,11 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
-import { NavLink } from 'react-router-dom';  // Use NavLink for routing
 import logo from "../images/logo/Anuyalogo.png";
+import  {NavLink} from 'react-router-dom';
 import 'reactjs-popup/dist/index.css'; // Ensure the popup styles are imported
 import "../styles/header.css";
 
-const Header = () => {
+const Header = () => {  
   return (
     <header className="header">
       {/* Logo Section */}
@@ -22,19 +22,45 @@ const Header = () => {
             <NavLink to="/">Home</NavLink>
           </li>
 
-          {/* Gallery Popup */}
+          {/* Originals Popup */}
           <li>
             <Popup
-              trigger={<button className="popup-trigger">Gallery</button>}
+              trigger={<button className="popup-trigger">Original Artwork</button>}
               position="bottom right"
               closeOnDocumentClick
             >
               <div className="popup-content">
-                <NavLink to="/original">Original Art</NavLink>
-                <NavLink to="/printstudio">Printstudio</NavLink>
-                <NavLink to="/nft">Digital Art</NavLink>
-                <NavLink to="/interior">Interior</NavLink>
+                <NavLink to="/original">All original Artwork</NavLink>
+                <NavLink to="/forsale">Available Originals</NavLink>
                 <NavLink to="/soldart">Sold Art</NavLink>
+                <NavLink to="/exhib">Exhibistions</NavLink>  
+              </div>
+            </Popup>
+          </li>
+
+         {/* Fine Art Prints */}
+          <li>
+            <Popup
+              trigger={<button className="popup-trigger">Fine Art Prints</button>}
+              position="bottom right"
+              closeOnDocumentClick
+            >
+         <div className="popup-content">
+          <NavLink to="/printstudio">Printstudio</NavLink>
+                <NavLink to="/nft">Available Fine Art Prints</NavLink>
+                </div>
+            </Popup>
+          </li>
+
+  {/* Home Popup */}
+  <li>
+            <Popup
+              trigger={<button className="popup-trigger">Home decor</button>}
+              position="bottom right"
+              closeOnDocumentClick
+            >
+              <div className="popup-content">
+                <NavLink to="/interior">Coaster & Pillows</NavLink>
               </div>
             </Popup>
           </li>
@@ -64,6 +90,7 @@ const Header = () => {
                 <NavLink to="/camilla">About Camilla</NavLink>
                 <NavLink to="/exhib">Exhibitions</NavLink>
                 <NavLink to="/faq">F.A.Q</NavLink>
+                <NavLink to="/shipping">Shipping</NavLink>
               </div>
             </Popup>
           </li>

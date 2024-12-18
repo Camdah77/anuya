@@ -1,22 +1,24 @@
 import React from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./components/header"; // Default export
+import Footer from "./components/footer"; // Default export
+
 import Home from "./components/home";
-import Camilla from "./components/camilla"; 
+import Camilla from "./components/camilla";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
+
       <Routes>
         <Route path="/" element={<Home />} /> {/* Landing Page */}
         <Route path="/camilla" element={<Camilla />} /> {/* Camilla Page */}
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

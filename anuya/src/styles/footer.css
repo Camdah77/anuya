@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+/* General Reset */
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  background-color:white;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 10px;
+  width: 100%;
+  margin-top: 50px; /* Ensure spacing from content above */
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #070707; /* Corrected link color to stand out against the footer background */
+  text-decoration: none;
+  margin: 0 10px;
+}
+.social-links a:visited {
+  color: #070707; /* Corrected link color to stand out against the footer background */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}

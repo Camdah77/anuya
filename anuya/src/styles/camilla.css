@@ -1,28 +1,43 @@
-
-
-/*Google fonts*/
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+
 /* General Reset */
+.container {
+  margin-top: 4vh;
+  display: flex; /* Flexbox to align the content in a row */
+  align-items: center; /* Vertically align the content */
+  justify-content: space-between; /* Add space between the columns */
+}
 
-  .container {
+.cdimage img {
+  width: 300px; /* Fixed width for the image */
+  height: 300px; /* Fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 cards per row */
-    gap: 20px; /* Space between cards */
-    width: 100%;
-      justify-items: center;
-    padding-bottom: 20px;
-  }
+.app-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px; /* Adjust size as needed */
+  color: black;
+  margin-bottom: 20px; /* Space below the heading */
+  margin-top: 200px; /* Adjust top margin for proper spacing */
+  git 
+  font-style: italic;
+  text-align: left;
+}
+.row {
+  width: 100%;
+}
+/* Optional: Add padding to the columns for better spacing */
+.col {
+  width: 50%; /* Split the row into two equal columns */
+  padding: 10px; /* Add some padding for better spacing */
+}
 
-  .app-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px; /* Adjust size as needed */
-    color: black; /* White text */
-    margin-bottom: 20px; /* Space below the heading */
-    margin-top: 30px;
-    margin-left: 80px;
-  
-    font-style: italic;
-    text-align: left; /* Center align */
-  }
-  
+/* Optional: Styling for the text in the first column */
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}

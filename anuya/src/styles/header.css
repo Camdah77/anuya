@@ -2,11 +2,6 @@
 
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
-/* General Reset */
-
-/* Body Styling */
-
-
 
 /* Header Styling */
 .header {
@@ -26,6 +21,10 @@
 .logo_container {
   flex-shrink: 0; /* Prevent shrinking */
 }
+.section-spacing {
+  margin-top: 0; /* Prevent gaps */
+  padding-top: 0; /* Minimal padding */
+}
 
 .logo img {
   margin-left: 80px;
@@ -34,27 +33,11 @@
   max-width: 100%; /* Prevent overflow */
 }
 
-.heroimage img{
+.heroimage img {
+  margin-top: 0;
+  height: 100%; /* Full viewport height */
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-  object-fit: cover;
-  padding-bottom: 2%;
-}
-.app-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px; /* Adjust size as needed */
-  color: black; /* White text */
-  margin-bottom: 20px; /* Space below the heading */
-  margin-top: 30px;
-  margin-left: 80px;
-
-  font-style: italic;
-  text-align: left; /* Center align */
+  margin-bottom: 0;
 }
 
 
@@ -83,8 +66,7 @@
   .navbar a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
-    transition: color 0.3s ease;
+     transition: color 0.3s ease;
   }
   
   .navbar a:hover {
@@ -95,7 +77,6 @@
     background: none;
     border: none;
     font-size: 16px;
-    font-weight: 500;
     cursor: pointer;
     color: black;
   }

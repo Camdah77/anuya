@@ -30,6 +30,7 @@ const Header = () => {
               closeOnDocumentClick
             >
               <div className="popup-content">
+              <NavLink to="/gallery">Gallery</NavLink>
                 <NavLink to="/original">All original Artwork</NavLink>
                 <NavLink to="/forsale">Available Originals</NavLink>
                 <NavLink to="/soldart">Sold Art</NavLink>

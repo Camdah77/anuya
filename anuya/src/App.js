@@ -7,16 +7,20 @@ import Footer from "./components/footer"; // Default export
 
 import Home from "./components/home";
 import Camilla from "./components/camilla";
+import Gallery from "./components/gallery";
+
 
 function App() {
   return (
     <>
       <Header />
-
-      <Routes>
-        <Route path="/" element={<Home />} /> {/* Landing Page */}
-        <Route path="/camilla" element={<Camilla />} /> {/* Camilla Page */}
-      </Routes>
+      <main>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/camilla" element={<Camilla />} />
+    <Route path="/gallery" element={<Gallery />} />
+  </Routes>
+</main>
       <Footer />
     </>
   );

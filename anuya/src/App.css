@@ -2,22 +2,33 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
 /* General Reset */
-* {
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  height: 100%; /* Ensures body spans the viewport fully */
+  width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.app-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px; /* Adjust size as needed */
-  color: black; /* White text */
-  margin-bottom: 20px; /* Space below the heading */
-  margin-top: 30px;
-  margin-left: 80px;
-
-  font-style: italic;
-  text-align: left; /* Center align */
+.section-spacing {
+  margin: 0;
+  padding: 0;
 }
 
+section {
+  margin: 0;
+  padding: 0;
+}
+
+div.start {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%; /* Ensure it spans the container fully */
+  height: auto; /* Prevent height from being constrained */
+}
+
+.app-heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

@@ -1,15 +1,13 @@
-.flipcard-container {
 
+.flipcard-container {
+  margin-top: 0; /* Remove top margin */
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 20px; /* Space between cards */
   width: 100%;
-    justify-items: center;
-  padding-bottom: 20px;
+  justify-items: center;
+  padding-bottom: 0px;
 }
-
-
-
 .flipcard {
   width: 400px;
   height: auto;

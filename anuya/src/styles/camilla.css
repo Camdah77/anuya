@@ -1,7 +1,17 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
 
 /* General Reset */
+.app-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 180px;
+  margin-left: 80px;
+  font-style: italic;
+  text-align: left;
+}
+
+
 .container {
   margin-top: 4vh;
   display: flex; /* Flexbox to align the content in a row */
@@ -10,21 +20,11 @@
 }
 
 .cdimage img {
-  width: 300px; /* Fixed width for the image */
-  height: 300px; /* Fixed height for the image */
+  width: 100%; /* Fixed width for the image */
+  height: auto; /* Fixed height for the image */
   object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
-.app-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px; /* Adjust size as needed */
-  color: black;
-  margin-bottom: 20px; /* Space below the heading */
-  margin-top: 200px; /* Adjust top margin for proper spacing */
-  git 
-  font-style: italic;
-  text-align: left;
-}
 .row {
   width: 100%;
 }

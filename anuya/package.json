@@ -12,6 +12,7 @@
     "gatsby-plugin-modal-routing": "^1.2.0",
     "herotofu-react": "^1.0.6",
     "jquery": "^3.7.1",
+    "jquery-fancybox": "^3.1.0",
     "react": "^18.3.1",
     "react-card-flip": "^1.2.3",
     "react-dom": "^18.3.1",

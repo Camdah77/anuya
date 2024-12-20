@@ -8,6 +8,7 @@ import Footer from "./components/footer"; // Default export
 import Home from "./components/home";
 import Camilla from "./components/camilla";
 import Gallery from "./components/gallery";
+import Exhib from "./components/exhib";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/camilla" element={<Camilla />} />
     <Route path="/gallery" element={<Gallery />} />
+    <Route path="/exhib" element={<Exhib />} />
   </Routes>
 </main>
       <Footer />

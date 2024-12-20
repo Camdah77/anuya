@@ -1,0 +1,20 @@
+/* General Reset */
+.app-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    font-style: italic;
+    text-align: left;
+  }
+  
+  
+  .img {
+    width: 200px;;
+    height: 200px; /* Flexbox to align the content in a row */
+    align-items: center; /* Vertically align the content */
+   
+  }
+  
+  
